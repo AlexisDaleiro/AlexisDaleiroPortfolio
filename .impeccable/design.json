@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-26T00:00:00Z",
+  "title": "Design System: Alexis Daleiro",
+  "extensions": {
+    "colorMeta": {
+      "celeste-deep": {
+        "role": "primary",
+        "displayName": "Deep Celeste",
+        "canonical": "#2c6a98",
+        "tonalRamp": [
+          "#0f2433",
+          "#173750",
+          "#204c6d",
+          "#2c6a98",
+          "#4d86b1",
+          "#78a6c9",
+          "#a9c8df",
+          "#dbe8f2"
+        ]
+      },
+      "celeste-pale": {
+        "role": "primary",
+        "displayName": "Pale Celeste (on ink)",
+        "canonical": "#9cc3e2",
+        "tonalRamp": [
+          "#1a2c3a",
+          "#2b4a62",
+          "#40698b",
+          "#5f8db3",
+          "#7ea9cc",
+          "#9cc3e2",
+          "#c2daee",
+          "#e6f0f8"
+        ]
+      },
+      "bone-ground": {
+        "role": "neutral",
+        "displayName": "Bone Ground",
+        "canonical": "#ecedeb",
+        "tonalRamp": [
+          "#262725",
+          "#40413f",
+          "#5e5f5c",
+          "#80817e",
+          "#a4a5a2",
+          "#c8c9c6",
+          "#e1e2e0",
+          "#ecedeb"
+        ]
+      },
+      "bone-paper": {
+        "role": "neutral",
+        "displayName": "Bone Paper",
+        "canonical": "#e1e2e0",
+        "tonalRamp": [
+          "#262725",
+          "#40413f",
+          "#5e5f5c",
+          "#80817e",
+          "#a4a5a2",
+          "#c8c9c6",
+          "#e1e2e0",
+          "#f4f5f3"
+        ]
+      },
+      "stone-rule": {
+        "role": "neutral",
+        "displayName": "Stone",
+        "canonical": "#c7c6c0",
+        "tonalRamp": [
+          "#272723",
+          "#41403b",
+          "#5f5e58",
+          "#807f78",
+          "#a3a29c",
+          "#c7c6c0",
+          "#dddcd7",
+          "#f0efec"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#111112",
+        "tonalRamp": [
+          "#111112",
+          "#232324",
+          "#3a3a3b",
+          "#535354",
+          "#706f70",
+          "#909091",
+          "#b3b3b4",
+          "#d8d8d9"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#4a4a47",
+        "tonalRamp": [
+          "#1c1c1a",
+          "#30302e",
+          "#4a4a47",
+          "#63635f",
+          "#7f7f7a",
+          "#9e9e99",
+          "#c0c0bb",
+          "#e2e2de"
+        ]
+      },
+      "ash-on-ink": {
+        "role": "neutral",
+        "displayName": "Ash on Ink",
+        "canonical": "#b9b8b2",
+        "tonalRamp": [
+          "#252522",
+          "#3d3c39",
+          "#5a5955",
+          "#7a7974",
+          "#9a9993",
+          "#b9b8b2",
+          "#d4d3ce",
+          "#eeede9"
+        ]
+      },
+      "rule-on-ink": {
+        "role": "neutral",
+        "displayName": "Rule on Ink",
+        "canonical": "#3a3a38",
+        "tonalRamp": [
+          "#1a1a19",
+          "#3a3a38",
+          "#545452",
+          "#70706d",
+          "#8f8f8b",
+          "#b0b0ac",
+          "#d1d1cd",
+          "#efefeb"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display-hero": {
+        "displayName": "Display Hero",
+        "purpose": "The name in the first viewport only; crosses the plate edge with difference blend."
+      },
+      "display": {
+        "displayName": "Display",
+        "purpose": "Look names and section titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Index row names, fact values, nav wordmark."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running copy, 58-62ch max."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Captions, nav, stack lists, fact keys; uppercase."
+      },
+      "label-action": {
+        "displayName": "Action Label",
+        "purpose": "Buttons and text links; uppercase."
+      }
+    },
+    "shadows": [
+      {
+        "name": "phone-on-paper",
+        "value": "drop-shadow(0 18px 30px rgb(17 17 18 / 0.18))",
+        "purpose": "filter on the mobile screenshot inside a plate; the only shadow in the system."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-house",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "All transitions."
+      },
+      {
+        "name": "state",
+        "value": "0.3s-0.5s",
+        "purpose": "Color, fill, underline draw, index indent."
+      },
+      {
+        "name": "plate-crossfade",
+        "value": "opacity 0.9s, transform 1.4s",
+        "purpose": "Desktop to mobile view swap; desktop scales to 1.03."
+      },
+      {
+        "name": "reveal",
+        "value": "clip-path inset(0 0 100% 0) to inset(0) over 1.6s",
+        "purpose": "Plate entry, top-down wipe, once."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "prefers-reduced-motion collapses all transitions and smooth scroll."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "stack",
+        "value": "1024px"
+      },
+      {
+        "name": "single-column",
+        "value": "720px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Square ink button; the one primary action per passage.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Escribirme</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;min-height:52px;padding:0 28px;background:var(--ink,#111112);color:var(--ground,#ecedeb);font:500 0.8125rem/1 var(--text,sans-serif);letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;border-radius:0;transition:background-color .4s cubic-bezier(.16,1,.3,1)}.ds-btn:hover{background:var(--accent,#2c6a98)}.ds-btn:focus-visible{outline:2px solid var(--accent,#2c6a98);outline-offset:3px}"
+    },
+    {
+      "name": "Inverse Button",
+      "kind": "button",
+      "refersTo": "button-inverse",
+      "description": "Bone button on the ink close.",
+      "html": "<div class=\"ds-ink\"><a class=\"ds-btn-inv\" href=\"#\">Descargar CV</a></div>",
+      "css": ".ds-ink{background:#111112;padding:24px}.ds-btn-inv{display:inline-flex;align-items:center;min-height:52px;padding:0 28px;background:var(--ground,#ecedeb);color:var(--ink,#111112);font:500 0.8125rem/1 var(--text,sans-serif);letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;transition:background-color .4s cubic-bezier(.16,1,.3,1)}.ds-btn-inv:hover{background:var(--stone,#c7c6c0)}.ds-btn-inv:focus-visible{outline:2px solid #ecedeb;outline-offset:3px}"
+    },
+    {
+      "name": "Text Link",
+      "kind": "button",
+      "refersTo": "textlink",
+      "description": "Underlined uppercase link; external links carry the arrow.",
+      "html": "<a class=\"ds-link\" href=\"#\">Ver sitio<svg viewBox=\"0 0 12 12\" width=\"10\" height=\"10\" aria-hidden=\"true\" style=\"fill:none;stroke:currentColor;stroke-width:1.4\"><path d=\"M3 9 9 3M4 3h5v5\"/></svg></a>",
+      "css": ".ds-link{display:inline-flex;align-items:center;gap:6px;color:var(--ink,#111112);font:500 0.8125rem/1 var(--text,sans-serif);letter-spacing:0.12em;text-transform:uppercase;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.5em;padding:12px 0;transition:color .3s cubic-bezier(.16,1,.3,1)}.ds-link svg{transition:transform .4s cubic-bezier(.16,1,.3,1)}.ds-link:hover{color:var(--accent,#2c6a98)}.ds-link:hover svg{transform:translate(2px,-2px)}.ds-link:focus-visible{outline:2px solid var(--accent,#2c6a98);outline-offset:3px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Sticky hairline nav: wordmark, centered section links, language switch.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-nav-name\" href=\"#\">Alexis Daleiro</a><nav><a href=\"#\">Trabajos</a><a href=\"#\">Índice</a><a href=\"#\">Contacto</a></nav><p class=\"ds-nav-lang\"><span>ES</span><span>/</span><a href=\"#\">EN</a></p></header>",
+      "css": ".ds-nav{height:64px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 32px;background:var(--ground,#ecedeb);border-bottom:1px solid var(--ink,#111112);color:#111112}.ds-nav-name{font:400 1.375rem/1 var(--display,serif);letter-spacing:-.01em;text-decoration:none;color:inherit}.ds-nav nav{display:flex;gap:32px}.ds-nav nav a{font:500 .75rem/1 var(--text,sans-serif);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:inherit;padding:8px 0;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .5s cubic-bezier(.16,1,.3,1)}.ds-nav nav a:hover{background-size:100% 1px}.ds-nav a:focus-visible{outline:2px solid #2c6a98;outline-offset:3px}.ds-nav-lang{justify-self:end;display:flex;gap:6px;margin:0;font:500 .75rem/1.3 var(--text,sans-serif);letter-spacing:.12em;text-transform:uppercase;color:#4a4a47}.ds-nav-lang span:first-child{color:#111112}.ds-nav-lang a{color:inherit;text-decoration:none}.ds-nav-lang a:hover{color:#111112;text-decoration:underline}"
+    },
+    {
+      "name": "Look Caption with View Toggle",
+      "kind": "chip",
+      "refersTo": "view-toggle",
+      "description": "Numbered label caption under a plate with the Desktop/Mobile toggle.",
+      "html": "<div class=\"ds-cap\"><p><span class=\"ds-cap-n\">02 / 05</span> Sitio comercial · 2025</p><div class=\"ds-views\"><button aria-pressed=\"true\">Escritorio</button><button aria-pressed=\"false\">Móvil</button></div></div>",
+      "css": ".ds-cap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:14px;font:500 .75rem/1.3 var(--text,sans-serif);letter-spacing:.12em;text-transform:uppercase;color:#111112}.ds-cap p{margin:0}.ds-cap-n{color:#4a4a47;margin-right:10px;font-variant-numeric:tabular-nums}.ds-views{display:flex;gap:4px}.ds-views button{font:inherit;letter-spacing:inherit;text-transform:inherit;border:1px solid transparent;background:none;color:#4a4a47;min-height:44px;padding:0 14px;cursor:pointer;transition:color .3s cubic-bezier(.16,1,.3,1),border-color .3s cubic-bezier(.16,1,.3,1)}.ds-views button:hover{color:#111112}.ds-views button[aria-pressed=true]{color:#111112;border-color:#111112}.ds-views button:focus-visible{outline:2px solid #2c6a98;outline-offset:3px}"
+    },
+    {
+      "name": "Index Row",
+      "kind": "card",
+      "refersTo": null,
+      "description": "Ledger line in the repo index; hover fills paper and indents.",
+      "html": "<ol class=\"ds-index\"><li><a href=\"#\"><span class=\"ds-in-name\">threeball</span><span class=\"ds-in-what\">Supermercado online</span><span class=\"ds-in-tech\">Astro · Node</span><span class=\"ds-in-year\">2025</span><svg viewBox=\"0 0 12 12\" width=\"10\" height=\"10\" aria-hidden=\"true\" style=\"fill:none;stroke:currentColor;stroke-width:1.4\"><path d=\"M3 9 9 3M4 3h5v5\"/></svg></a></li></ol>",
+      "css": ".ds-index{list-style:none;margin:0;padding:0;border-top:1px solid #111112}.ds-index a{display:grid;grid-template-columns:3fr 4fr 3fr .6fr auto;align-items:baseline;gap:24px;padding:20px 0;border-bottom:1px solid #c7c6c0;color:#111112;text-decoration:none;transition:background-color .4s cubic-bezier(.16,1,.3,1),padding .5s cubic-bezier(.16,1,.3,1)}.ds-index a:hover{background:#e1e2e0;padding-left:12px;padding-right:12px}.ds-index a:focus-visible{outline:2px solid #2c6a98;outline-offset:3px}.ds-in-name{font:400 1.625rem/1.1 var(--display,serif)}.ds-in-what,.ds-in-year{color:#4a4a47;font-variant-numeric:tabular-nums}.ds-in-tech{color:#4a4a47;font:500 .75rem/1.3 var(--text,sans-serif);letter-spacing:.12em;text-transform:uppercase;}"
+    },
+    {
+      "name": "Fact Sheet",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Definition list with label keys and Bodoni values, used in type-only looks.",
+      "html": "<dl class=\"ds-facts\"><div><dt>Páginas</dt><dd>32 estáticas</dd></div><div><dt>Modelos</dt><dd>27</dd></div></dl>",
+      "css": ".ds-facts{margin:0;border-top:1px solid #111112;color:#111112}.ds-facts div{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:16px;padding:16px 0;border-bottom:1px solid #c7c6c0}.ds-facts dt{color:#4a4a47;padding-top:.3em;font:500 .75rem/1.3 var(--text,sans-serif);letter-spacing:.12em;text-transform:uppercase;}.ds-facts dd{margin:0;font:400 1.375rem/1.25 var(--display,serif);font-variant-numeric:lining-nums}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Lookbook",
+    "overview": "The site is a fashion-house lookbook for a developer's work. Each shipped project is a look: a real screenshot plate, numbered like a runway sequence (01 / 05), captioned in small tracked capitals, and named in a monumental high-contrast Bodoni. The pace is slow and full; one look per scroll, never a grid of equal cards.\n\nThe ground is a cool bone, the ink nearly black, and a single deepened Uruguayan celeste appears only when something is acted on (hover, focus, caret). Structure is drawn with 1px hairlines rather than boxes. Nothing is rounded, nothing floats on a shadow, and no decorative texture is added: the real screenshots are the only image material in the world.\n\nThe page ends on ink. The contact passage inverts the world (ink ground, bone type) so the close reads as the last page of the book.",
+    "keyCharacteristics": [
+      "Bone ground, near-black ink, one celeste accent reserved for interaction.",
+      "Bodoni Moda display set huge, tight and low; Schibsted Grotesk for everything functional.",
+      "Uppercase tracked labels (0.12em) for nav, captions, stack lists and actions.",
+      "1px hairline rules in ink (structural) or stone (subdivision).",
+      "Square corners everywhere; flat surfaces.",
+      "Real screenshots as the only texture, crossfading desktop to mobile view."
+    ],
+    "rules": [
+      {
+        "name": "The Answer-Only Accent Rule",
+        "body": "Celeste appears only in response to the user: hover, focus, caret. At rest the page is bone and ink alone.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink Close Rule",
+        "body": "The final passage inverts to ink ground with bone type; on ink, accent and secondary text switch to their on-ink variants (pale celeste, ash, ink rule) and the focus ring turns bone.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Bodoni names things; Schibsted states things. Never set a label, number or action in Bodoni, and never set a project or section name in the grotesk.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Count Rule",
+        "body": "Look numbers and years use tabular numerals so sequences align.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hairline Not Box Rule",
+        "body": "Separate with a 1px rule (ink for structure, stone for subdivision) or a tonal band; never with a card, border box or shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** use the house ease `cubic-bezier(0.16, 1, 0.3, 1)` for every transition, at 0.3s to 0.5s for state and 0.9s to 1.6s for image and reveal.",
+      "**Do** number every look \"NN / TT\" in tabular numerals and caption it in the label voice.",
+      "**Do** keep celeste for hover, focus and caret; use pale celeste for the same role on ink.",
+      "**Do** show real screenshots of the shipped site, desktop and mobile, as the only imagery.",
+      "**Do** draw structure with 1px ink rules and subdivision with 1px stone rules."
+    ],
+    "donts": [
+      "**Don't** round a corner or add a shadow to a surface; the phone drop-shadow is the only shadow.",
+      "**Don't** lay projects out as a grid of equal cards; one look per passage.",
+      "**Don't** introduce illustrations, gradients, stock photography or decorative textures.",
+      "**Don't** fill a resting element with celeste.",
+      "**Don't** set labels or numbers in Bodoni, or names and titles in the grotesk."
+    ]
+  }
+}
